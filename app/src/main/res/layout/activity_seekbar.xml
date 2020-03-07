@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="SeekBar Activity"
+        android:textSize="25sp" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:max="100"
+        android:progress="10"/>
+
+    <TextView
+        android:id="@+id/seekbar_value"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="SeekBar 값 표시"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+        <EditText
+            android:id="@+id/seekbar_input"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:hint="progress / increment"
+            android:inputType="numberSigned"
+            />
+        <Button
+            android:id="@+id/seekbar_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="progress"/>
+        <Button
+            android:id="@+id/seekbar_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="increment"/>
+    </LinearLayout>
+
+</LinearLayout>
